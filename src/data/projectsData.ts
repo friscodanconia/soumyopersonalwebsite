@@ -60,6 +60,56 @@ export const projects: Project[] = [
     ]
   },
   {
+    id: "twitter-bookmarks",
+    slug: "twitter-bookmarks",
+    title: "The Bookmark Library",
+    tagline: "1,385 curated Twitter insights organized into 10 searchable categories",
+    thumbnail: "https://images.unsplash.com/photo-1611605698335-8b1569810432?auto=format&fit=crop&q=80",
+    links: {
+      demo: "https://twitter.soumyosinha.com",
+      github: "https://github.com/friscodanconia/twitter-bookmarks-website",
+    },
+    technologies: ["Python", "HTML/CSS/JS", "OpenAI API"],
+    sections: [
+      {
+        type: 'text',
+        content: "A searchable, categorized library of curated Twitter bookmarks spanning AI, development, business, and more \u2014 turning the chaos of social media saves into an organized knowledge base."
+      },
+      {
+        type: 'stats',
+        items: [
+          { value: "1,385", label: "curated insights" },
+          { value: "10", label: "categories" },
+          { value: "261", label: "video resources" },
+        ]
+      },
+      {
+        type: 'heading',
+        content: "The Why"
+      },
+      {
+        type: 'text',
+        content: "Twitter bookmarks are where good ideas go to die. You save a brilliant thread, a useful tool, a thought-provoking take \u2014 and never find it again. The Bookmark Library fixes that by processing nearly 3,000 bookmarks through AI categorization, extracting key insights, and presenting them in a filterable, searchable interface organized into 10 categories."
+      },
+      {
+        type: 'heading',
+        content: "Key Features"
+      },
+      {
+        type: 'list',
+        items: ["AI-powered categorization of bookmarks into 10 topic areas (LLMs, AI Agents, Dev Tools, Creative AI, Finance, Business, Web Dev, Learning, and more)", "Full-text search across all bookmarks and insights", "Year and content-type filters for quick discovery", "261 curated video resources from AI thought leaders", "Similar content recommendations using embeddings"]
+      },
+      {
+        type: 'heading',
+        content: "Tools Used"
+      },
+      {
+        type: 'list',
+        items: ["Python (bookmark processing and website generation)", "OpenAI API (categorization and insight extraction)", "Static HTML/CSS/JS (fast, no-framework frontend)", "Vercel (hosting and deployment)"]
+      },
+    ]
+  },
+  {
     id: "ai-investment-research",
     slug: "ai-investment-research",
     title: "AI Investment Research Platform",
