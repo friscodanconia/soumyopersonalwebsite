@@ -2,6 +2,64 @@ import type { Project, Section } from '../types/project';
 
 export const projects: Project[] = [
   {
+    id: "searching-for-food",
+    slug: "searching-for-food",
+    title: "Searching for Food",
+    tagline: "An interactive data story about what India searches for when it's hungry",
+    thumbnail: "https://images.unsplash.com/photo-1596040033229-a9821ebd058d?auto=format&fit=crop&q=80",
+    links: {
+      demo: "https://howindiaeats.soumyosinha.com",
+      github: "https://github.com/friscodanconia/howIndiaeatsproject",
+    },
+    technologies: ["React", "D3.js", "TypeScript", "Vite", "Google Trends (pytrends)"],
+    sections: [
+      {
+        type: 'heading',
+        content: "What is this?"
+      },
+      {
+        type: 'text',
+        content: "India is a country that thinks about food constantly \u2014 and that obsession leaves a trail in Google search data. \"Searching for Food\" is an interactive story that follows that trail across 30+ dishes, 28 states, and five years of search history to reveal what India craves, when it craves it, and the surprising gap between what we search for and what we actually eat."
+      },
+      {
+        type: 'heading',
+        content: "What did we find?"
+      },
+      {
+        type: 'text',
+        content: "**Biryani rules everything.** It's not just the most searched food in India \u2014 it's the most searched food in virtually every single state. From Kashmir to Kerala, Tamil Nadu to Tripura, biryani beats local favorites on Google. The regional food map isn't a colorful patchwork of local champions. It's a biryani empire."
+      },
+      {
+        type: 'text',
+        content: "**But the real story is in the gaps.** Nobody Googles how to make roti or dal \u2014 you just make them. Search doesn't measure what people eat; it measures what they *aspire* to cook. Masala chai is consumed 800 million times a day across India, but it barely registers on Google. Biryani is a weekend project, not a weekday meal \u2014 and the search data proves it. Sunday is biryani day, Wednesday is dal rice day, and Thursday is when people start Googling butter chicken for the weekend."
+      },
+      {
+        type: 'text',
+        content: "**Festivals write themselves in search spikes.** Modak goes from invisible to peak search during Ganesh Chaturthi. Ladoo and gulab jamun surge for Diwali. Haleem explodes during Ramadan in Hyderabad. The calendar of Indian food is the calendar of Indian faith."
+      },
+      {
+        type: 'text',
+        content: "**The pandemic changed what we craved.** Locked at home in 2021, India searched for masala chai (+44%) and dal rice (+36%) more than ever \u2014 the comforts of home when home was all we had. Street food like samosa and pani puri dropped, not because people stopped wanting them, but because the streets were empty."
+      },
+      {
+        type: 'heading',
+        content: "Where does the data come from?"
+      },
+      {
+        type: 'text',
+        content: "All search data comes from **Google Trends**, pulled using Python's pytrends library. We compared 30+ dishes head-to-head at both national and state levels, using biryani as the anchor term, averaged over five years (accessed February 2026). For the \"what we actually eat\" comparison in Chapter 5, consumption rankings are estimated from India's **National Sample Survey (NSSO 68th round)** household expenditure data and **ICMR-NIN dietary guidelines** \u2014 there's no single source that ranks every dish by daily consumption, so these are informed approximations that capture the broad pattern: the foods India eats most (roti, dal, chai) are the ones it Googles least."
+      },
+      {
+        type: 'heading',
+        content: "Inspiration"
+      },
+      {
+        type: 'text',
+        content: "This project is inspired by Nadieh Bremer's beautiful <a href=\"https://searchingforbirds.visualcinnamon.com/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"text-amber-600 dark:text-amber-400 hover:underline\">Searching for Birds</a>, which used Dutch Google Trends data to tell the story of how the Netherlands searches for birds through the seasons. We wanted to do the same for Indian food \u2014 take the same idea of turning search data into a scrollable visual narrative, but apply it to a country where food is identity, geography, religion, and family all at once."
+      },
+    ]
+  },
+  {
     id: "ai-investment-research",
     slug: "ai-investment-research",
     title: "AI Investment Research Platform",
@@ -140,7 +198,6 @@ export const projects: Project[] = [
         type: 'list',
         items: ["Sarvam AI Bulbul v3 TTS API for speech synthesis", "React 19 + TypeScript for the UI", "Tailwind CSS for styling", "Vite for build tooling"]
       },
-      { type: 'cta', text: 'Read the build guide', url: '/projects/say-it-in-india/guide' }
     ]
   },
   {
