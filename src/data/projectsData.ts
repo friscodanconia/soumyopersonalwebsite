@@ -2,6 +2,48 @@ import type { Project, Section } from '../types/project';
 
 export const projects: Project[] = [
   {
+    id: "attention-vs-tech",
+    slug: "attention-vs-tech",
+    title: "The Crossover",
+    tagline: "Your attention shrank. The machines grew. Watch twenty years of collision in two minutes.",
+    thumbnail: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&q=80",
+    links: {
+      demo: "https://friscodanconia.github.io/attention-vs-tech/",
+      github: "https://github.com/friscodanconia/attention-vs-tech",
+    },
+    technologies: ["JavaScript", "Canvas API", "HTML/CSS", "Data Visualization"],
+    sections: [
+      {
+        type: 'text',
+        content: "An animated, scroll-triggered data story that visualizes the collision between declining human attention spans and the exponential rise of AI and bot traffic online. See it live at <a href=\"https://friscodanconia.github.io/attention-vs-tech/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"text-amber-600 dark:text-amber-400 hover:underline\">friscodanconia.github.io/attention-vs-tech</a>."
+      },
+      {
+        type: 'heading',
+        content: "The Why"
+      },
+      {
+        type: 'text',
+        content: "In 2004, a person could focus on a single screen for 2 minutes and 30 seconds. By 2022, that number had dropped to 47 seconds. Meanwhile, bots went from 5% of internet traffic to over 51%, and half of all new web articles are now AI-generated. I wanted to tell that story in a way that makes you feel the shift \u2014 not just read about it."
+      },
+      {
+        type: 'heading',
+        content: "Key Features"
+      },
+      {
+        type: 'list',
+        items: ["Real-time counters showing emails sent, YouTube hours uploaded, and AI articles published since you opened the page", "Animated dual-line chart drawing the attention curve (amber) against the machine curve (cyan) from 2004 to 2026", "Spotlight cards that pause the timeline at key moments \u2014 iPhone launch, GPT milestones, the bot takeover", "Every data point sourced from peer-reviewed research (Gloria Mark, Ward et al.) and industry reports (Imperva, Gallup, Europol)", "Fully responsive canvas rendering for desktop and mobile", "Credits sequence with rolling citations"]
+      },
+      {
+        type: 'heading',
+        content: "Tools Used"
+      },
+      {
+        type: 'list',
+        items: ["Vanilla JavaScript with Canvas 2D API for all rendering", "Custom easing and spotlight state machine for scroll-driven animation", "Research data from 15+ academic and industry sources"]
+      },
+    ]
+  },
+  {
     id: "searching-for-food",
     slug: "searching-for-food",
     title: "Searching for Food",
