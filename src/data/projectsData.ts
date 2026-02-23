@@ -2,6 +2,55 @@ import type { Project, Section } from '../types/project';
 
 export const projects: Project[] = [
   {
+    id: "vaani",
+    slug: "vaani",
+    title: "Vaani",
+    tagline: "Talk to any document in any Indian language",
+    thumbnail: "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?auto=format&fit=crop&q=80",
+    links: {
+      demo: "https://vaani.soumyosinha.com",
+      github: "https://github.com/friscodanconia/vaani",
+    },
+    technologies: ["Next.js 16", "React 19", "Tailwind CSS v4", "Sarvam AI APIs", "TypeScript"],
+    sections: [
+      {
+        type: 'text',
+        content: "An interactive demo hub for Sarvam AI's Indian language models. Vaani (meaning \"voice\" in Sanskrit) chains 6 AI models so anyone can upload a document and ask questions in their own language. Try it at <a href=\"https://vaani.soumyosinha.com\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"text-amber-600 dark:text-amber-400 hover:underline\">vaani.soumyosinha.com</a>."
+      },
+      {
+        type: 'stats',
+        items: [
+          { value: "6", label: "AI models chained" },
+          { value: "22", label: "Indian languages" },
+        ]
+      },
+      {
+        type: 'heading',
+        content: "The Why"
+      },
+      {
+        type: 'text',
+        content: "India has 22 official languages, but most government documents arrive in just one. A farmer in Tamil Nadu receiving a Hindi policy form has no easy way to understand it. Vaani solves this by chaining vision, speech, reasoning, translation, and voice synthesis so anyone can point a phone at a document and get answers spoken back in their language."
+      },
+      {
+        type: 'heading',
+        content: "Key Features"
+      },
+      {
+        type: 'list',
+        items: ["Full pipeline demo showing 5 AI models working in concert across 5 Indian languages", "Sarvam Vision reading a 2,300-year-old Tamil palm-leaf manuscript", "Saaras STT transcribing code-switched Hindi-English speech from a 3 Idiots scene", "Sarvam Translate racing 8 languages in parallel with a live timer", "Mayura showing culturally-aware translation vs literal translation side by side", "Bulbul TTS speaking the same sentence in 5 voices with natural intonation"]
+      },
+      {
+        type: 'heading',
+        content: "Tools Used"
+      },
+      {
+        type: 'list',
+        items: ["Next.js 16 App Router with React 19", "Sarvam AI APIs (Document Intelligence, Saarika STT, Language ID, Sarvam-M, Mayura Translation, Bulbul TTS)", "Tailwind CSS v4 with CSS custom properties for theming", "Playfair Display + DM Sans typography", "Vercel for deployment"]
+      },
+    ]
+  },
+  {
     id: "attention-vs-tech",
     slug: "attention-vs-tech",
     title: "The Crossover",
