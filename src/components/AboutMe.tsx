@@ -2,10 +2,13 @@ import { useRef } from 'react';
 import { MapPin } from 'lucide-react';
 import { aboutData } from '../data/personalData';
 import { useHighlightSearch } from '../hooks/useHighlightSearch';
+import { useDocumentMeta } from '../hooks/useDocumentMeta';
+import { routeMeta } from '../data/routeMeta';
 
 export function AboutMe() {
   const contentRef = useRef<HTMLDivElement>(null);
   useHighlightSearch(contentRef);
+  useDocumentMeta({ ...routeMeta['/about'], canonicalPath: '/about' });
 
   const { hero, quickFacts, impactHighlights } = aboutData;
 

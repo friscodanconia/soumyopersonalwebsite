@@ -2,8 +2,11 @@ import { Mail } from 'lucide-react';
 import { contactData } from '../data/contactData';
 import { MobileHeader } from './MobileHeader';
 import { useMediaQuery } from '../hooks/useMediaQuery';
+import { useDocumentMeta } from '../hooks/useDocumentMeta';
+import { routeMeta } from '../data/routeMeta';
 
 export function Contact() {
+  useDocumentMeta({ ...routeMeta['/contact'], canonicalPath: '/contact' });
   const isMobile = useMediaQuery('(max-width: 768px)');
 
   return (

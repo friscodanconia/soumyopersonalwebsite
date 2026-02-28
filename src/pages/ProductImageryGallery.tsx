@@ -2,8 +2,11 @@ import { Link } from 'react-router-dom';
 import { ArrowLeft } from 'lucide-react';
 import { MobileHeader } from '../components/MobileHeader';
 import { useMediaQuery } from '../hooks/useMediaQuery';
+import { useDocumentMeta } from '../hooks/useDocumentMeta';
+import { routeMeta } from '../data/routeMeta';
 
 export function ProductImageryGallery() {
+  useDocumentMeta({ ...routeMeta['/product-imagery-gallery'], canonicalPath: '/product-imagery-gallery' });
   const isMobile = useMediaQuery('(max-width: 768px)');
 
   // Sample images - replace these with your actual AI-generated fashion images

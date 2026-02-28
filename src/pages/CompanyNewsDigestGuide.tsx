@@ -4,8 +4,11 @@ import { ArrowLeft } from 'lucide-react';
 import { MobileHeader } from '../components/MobileHeader';
 import { useMediaQuery } from '../hooks/useMediaQuery';
 import { useHighlightSearch } from '../hooks/useHighlightSearch';
+import { useDocumentMeta } from '../hooks/useDocumentMeta';
+import { routeMeta } from '../data/routeMeta';
 
 export function CompanyNewsDigestGuide() {
+  useDocumentMeta({ ...routeMeta['/projects/company-news-digest/guide'], canonicalPath: '/projects/company-news-digest/guide' });
   const isMobile = useMediaQuery('(max-width: 768px)');
   const contentRef = useRef<HTMLDivElement>(null);
   useHighlightSearch(contentRef);

@@ -1,0 +1,37 @@
+# Soumyo Sinha — Personal Website
+
+> Marketing and technology executive with experience at Apple, Disney, Amazon, Microsoft, and Nokia. This site showcases professional background and side projects exploring AI, data visualization, and creative technology.
+
+## Pages
+
+- [About](https://www.soumyosinha.com/about): Background, career highlights, and impact metrics
+- [Experience](https://www.soumyosinha.com/experience): Professional roles at Apple, Disney, Amazon, Microsoft, Nokia
+- [Projects](https://www.soumyosinha.com/projects): Portfolio of side projects
+- [Reading](https://www.soumyosinha.com/reading): Book recommendations and reading log
+- [Contact](https://www.soumyosinha.com/contact): How to get in touch
+
+## Projects
+
+- [Vaani](https://www.soumyosinha.com/projects/vaani): Talk to any document in any Indian language — chains 6 Sarvam AI models across 22 languages
+- [The Crossover](https://www.soumyosinha.com/projects/attention-vs-tech): Animated data story visualizing declining attention spans vs rising AI/bot traffic
+- [Searching for Food](https://www.soumyosinha.com/projects/searching-for-food): Interactive scrollytelling data story about India's food culture through Google search data
+- [The Bookmark Library](https://www.soumyosinha.com/projects/twitter-bookmarks): 1,385 curated Twitter insights organized into 10 searchable categories
+- [AI Investment Research](https://www.soumyosinha.com/projects/ai-investment-research): 4-agent AI pipeline analyzing 82 companies across the AI value chain
+- [Company News Digest](https://www.soumyosinha.com/projects/company-news-digest): AI-ranked company news digests delivered to Slack
+- [Say It In India](https://www.soumyosinha.com/projects/say-it-in-india): One story, thirty voices, eleven languages — hear India's emotions come alive
+- [CineMagic](https://www.soumyosinha.com/projects/cinemagic): Movie and TV discovery with curated collections and regional cinema
+- [Nestor](https://www.soumyosinha.com/projects/nestor-ai): Your guide to AI tools and resources
+- [BBMP Work Tracker](https://www.soumyosinha.com/projects/bbmp-tracker): Civic tech for transparency in Bangalore public works
+- [TallyPrime AI Assistant](https://www.soumyosinha.com/projects/tally-prime-assistant): AI-powered help for TallyPrime accounting software
+- [2025 Reading Log](https://www.soumyosinha.com/projects/books-2025): Week-by-week reading tracker for 2025
+- [Chicken Atlas](https://www.soumyosinha.com/projects/visual-cookbook): Ad-free visual cookbook with rich infographics
+- [AI Product Imagery](https://www.soumyosinha.com/projects/product-imagery-fashion): Using AI to simplify fashion product photography
+- [AI Marketing Toolkit](https://www.soumyosinha.com/projects/marketing-toolkit): Building marketing assets entirely with AI tools
+
+## Build Guides
+
+- [AI Investment Research Guide](https://www.soumyosinha.com/projects/ai-investment-research/guide)
+- [BBMP Tracker Guide](https://www.soumyosinha.com/projects/bbmp-tracker/guide)
+- [Company News Digest Guide](https://www.soumyosinha.com/projects/company-news-digest/guide)
+- [Say It In India Guide](https://www.soumyosinha.com/projects/say-it-in-india/guide)
+- [How India Eats Guide](https://www.soumyosinha.com/projects/searching-for-food/guide)

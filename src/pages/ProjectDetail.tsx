@@ -6,14 +6,20 @@ import { MobileHeader } from '../components/MobileHeader';
 import { useMediaQuery } from '../hooks/useMediaQuery';
 import { useHighlightSearch } from '../hooks/useHighlightSearch';
 import { SectionRenderer } from '../components/SectionRenderer';
+import { useDocumentMeta } from '../hooks/useDocumentMeta';
 
 export function ProjectDetail() {
   const { slug } = useParams();
   const isMobile = useMediaQuery('(max-width: 768px)');
   const contentRef = useRef<HTMLDivElement>(null);
   useHighlightSearch(contentRef);
-  
+
   const project = projects.find(p => p.slug === slug);
+  useDocumentMeta({
+    title: project ? project.title : 'Project Not Found',
+    description: project ? project.tagline : 'The requested project could not be found.',
+    canonicalPath: project ? `/projects/${project.slug}` : undefined,
+  });
 
   if (!project) {
     return (

@@ -1,5 +1,7 @@
 import { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
+import { useDocumentMeta } from '../hooks/useDocumentMeta';
+import { routeMeta } from '../data/routeMeta';
 import '../styles/searching-for-food.css';
 import { ScrollySection } from '../components/searchingForFood/ScrollySection';
 import { ChapterTitle } from '../components/searchingForFood/ChapterTitle';
@@ -21,6 +23,7 @@ const CHAPTERS = [
 ];
 
 export function SearchingForFoodGuide() {
+  useDocumentMeta({ ...routeMeta['/projects/searching-for-food/guide'], canonicalPath: '/projects/searching-for-food/guide' });
   const [activeChapter, setActiveChapter] = useState(0);
   const chapterRefs = useRef<(HTMLDivElement | null)[]>([]);
 

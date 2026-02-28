@@ -4,6 +4,8 @@ import { ArrowLeft, Play } from 'lucide-react';
 import { MobileHeader } from '../components/MobileHeader';
 import { useMediaQuery } from '../hooks/useMediaQuery';
 import { useHighlightSearch } from '../hooks/useHighlightSearch';
+import { useDocumentMeta } from '../hooks/useDocumentMeta';
+import { routeMeta } from '../data/routeMeta';
 
 interface Video {
   id: string;
@@ -38,6 +40,7 @@ const videos: Video[] = [
 ];
 
 export function KrutrimDemos() {
+  useDocumentMeta({ ...routeMeta['/krutrim-demos'], canonicalPath: '/krutrim-demos' });
   const isMobile = useMediaQuery('(max-width: 768px)');
   const contentRef = useRef<HTMLDivElement>(null);
   useHighlightSearch(contentRef);

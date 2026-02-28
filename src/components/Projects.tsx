@@ -5,8 +5,11 @@ import { projectsData } from '../data/projectsData';
 import { MobileHeader } from './MobileHeader';
 import { useMediaQuery } from '../hooks/useMediaQuery';
 import { useHighlightSearch } from '../hooks/useHighlightSearch';
+import { useDocumentMeta } from '../hooks/useDocumentMeta';
+import { routeMeta } from '../data/routeMeta';
 
 export function Projects() {
+  useDocumentMeta({ ...routeMeta['/projects'], canonicalPath: '/projects' });
   const isMobile = useMediaQuery('(max-width: 768px)');
   const contentRef = useRef<HTMLDivElement>(null);
   useHighlightSearch(contentRef);
