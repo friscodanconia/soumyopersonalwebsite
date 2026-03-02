@@ -2,6 +2,46 @@ import type { Project, Section } from '../types/project';
 
 export const projects: Project[] = [
   {
+    id: "kesariya-music-video",
+    slug: "kesariya-music-video",
+    title: "Kesariya - AI Cinematic Music Video",
+    tagline: "Four AIs collaborate to create a cinematic music video for Bollywood's biggest love anthem across six Indian languages",
+    thumbnail: "https://images.unsplash.com/photo-1596727147705-61a532a659bd?auto=format&fit=crop&q=80",
+    links: {
+    },
+    technologies: ["Remotion", "React", "TypeScript", "Google Gemini", "Kling 2.0 (fal.ai)", "Sarvam AI", "Claude Code"],
+    sections: [
+      {
+        type: 'text',
+        content: "A cinematic music video for Kesariya's multilingual cover. One love story told through Hindi, Tamil, Kannada, Marathi, Gujarati, and Bengali. Built entirely with AI: Gemini imagined 27 frames, Kling 2.0 animated 6 key moments into video clips, Sarvam AI verified language boundaries, and Claude Code directed every camera move, color grade, and transition."
+      },
+      {
+        type: 'heading',
+        content: "The Why"
+      },
+      {
+        type: 'text',
+        content: "Can AI create something that actually moves you emotionally? Not a tech demo. A real music video with cinematic language: directed camera motion, progressive color grading, film transitions, and visual storytelling across six Indian languages."
+      },
+      {
+        type: 'heading',
+        content: "Key Features"
+      },
+      {
+        type: 'list',
+        items: ["6 key images animated into video clips via Kling 2.0 (fal.ai), saffron flowers sway, Holi powder drifts, boats rock on rivers", "27 AI-generated images with individually directed Ken Burns camera moves", "9 language segments with unique color grades following an emotional arc (desaturated to vivid to transcendent)", "8 cinematic transition types (iris, diamond wipe, blur-bloom, hard cut with flash)", "Progressive letterbox bars that narrow as the couple gets closer", "Saffron thread motif growing across the video connecting all segments", "Opening title sequence with AI cast credits"]
+      },
+      {
+        type: 'heading',
+        content: "Tools Used"
+      },
+      {
+        type: 'list',
+        items: ["**Remotion** - React-based video rendering framework", "**Google Gemini** - Image generation (27 cinematic stills)", "**Kling 2.0 (fal.ai)** - Image-to-video animation (6 key moments)", "**Sarvam AI** - Language verification via Saaras speech-to-text", "**Claude Code** - Creative direction, all code, cinematography decisions", "**QuickLRC** - Lyric timestamp extraction from audio"]
+      },
+    ]
+  },
+  {
     id: "vaani",
     slug: "vaani",
     title: "Vaani",
