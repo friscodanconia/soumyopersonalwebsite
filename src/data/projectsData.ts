@@ -8,6 +8,7 @@ export const projects: Project[] = [
     tagline: "Four AIs collaborate to create a cinematic music video for Bollywood's biggest love anthem across six Indian languages",
     thumbnail: "https://images.unsplash.com/photo-1596727147705-61a532a659bd?auto=format&fit=crop&q=80",
     links: {
+      demo: "https://youtu.be/sSOIejNXcS4",
     },
     technologies: ["Remotion", "React", "TypeScript", "Google Gemini", "Kling 2.0 (fal.ai)", "Sarvam AI", "Claude Code"],
     sections: [
