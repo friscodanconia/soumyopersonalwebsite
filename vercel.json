@@ -6,12 +6,19 @@
   "cleanUrls": true,
   "redirects": [
     {
+      "source": "/:path(.*)",
+      "has": [{ "type": "host", "value": "soumyosinha.com" }],
+      "destination": "https://www.soumyosinha.com/:path",
+      "permanent": true
+    },
+    {
       "source": "/",
       "has": [{ "type": "host", "value": "howindiaeats.soumyosinha.com" }],
       "destination": "/projects/searching-for-food/guide",
       "permanent": false
     }
   ],
+  "trailingSlash": false,
   "rewrites": [
     { "source": "/(.*)", "destination": "/index.html" }
   ]

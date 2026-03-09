@@ -180,11 +180,18 @@ function injectMeta(html, route, { title, description }) {
     `<meta property="twitter:url" content="${url}"`
   );
 
-  // Add canonical link
-  out = out.replace(
-    '</head>',
-    `  <link rel="canonical" href="${url}" />\n  </head>`
-  );
+  // Update or add canonical link
+  if (out.includes('<link rel="canonical"')) {
+    out = out.replace(
+      /<link rel="canonical" href="[^"]*" \/>/,
+      `<link rel="canonical" href="${url}" />`
+    );
+  } else {
+    out = out.replace(
+      '</head>',
+      `  <link rel="canonical" href="${url}" />\n  </head>`
+    );
+  }
 
   return out;
 }
