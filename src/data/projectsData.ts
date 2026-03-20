@@ -2,6 +2,47 @@ import type { Project, Section } from '../types/project';
 
 export const projects: Project[] = [
   {
+    id: "the-red-pen",
+    slug: "the-red-pen",
+    title: "The Red Pen \u2014 LinkedIn Edition",
+    tagline: "AI writing pattern detector built specifically for LinkedIn posts",
+    thumbnail: "https://images.unsplash.com/photo-1455390582262-044cdead277a?auto=format&fit=crop&q=80",
+    links: {
+      github: "https://github.com/friscodanconia/TheRedPen",
+    },
+    technologies: ["Vanilla JavaScript", "HTML/CSS", "Chrome Extension (Manifest V3)", "Anthropic API", "Gemini API", "OpenRouter API"],
+    sections: [
+      {
+        type: 'text',
+        content: "A free, client-side tool that detects AI writing patterns in LinkedIn posts with a 270-entry phrase database, 13 structural detectors, and an AI score from 0-100. Benchmarked against 1,018 posts with 10-point mean separation between human and AI content."
+      },
+      {
+        type: 'heading',
+        content: "The Why"
+      },
+      {
+        type: 'text',
+        content: "LinkedIn is where AI slop is most visible, most formulaic, and most mockable. Every other post uses the same humble brags, journey narratives, and engagement bait. The Red Pen catches these patterns and helps fix them with one click \u2014 no AI rewriting, just deterministic replacements."
+      },
+      {
+        type: 'heading',
+        content: "Key Features"
+      },
+      {
+        type: 'list',
+        items: ["270 phrase patterns sourced from 13 research databases plus 2026-era tells discovered through differential analysis of real LLM output", "AI Score 0-100 with percentile comparison against 1,018 benchmarked posts", "Click-to-fix buttons that apply replacements and re-score instantly", "4 LinkedIn-specific structural detectors: broetry, hashtag spam, hook/payoff, motivational arc", "Smart quote normalization so copy-paste from LinkedIn actually works", "Chrome extension with real-time score badge in LinkedIn compose boxes", "Everything runs client-side \u2014 zero data leaves your browser"]
+      },
+      {
+        type: 'heading',
+        content: "Tools Used"
+      },
+      {
+        type: 'list',
+        items: ["Vanilla JS (zero dependencies, zero build step)", "DM Sans + Source Serif 4 typography", "Anthropic, Gemini, OpenRouter APIs for benchmark corpus generation", "Python (datasets library) for corpus building", "Node.js for scoring pipeline"]
+      },
+    ]
+  },
+  {
     id: "kesariya-music-video",
     slug: "kesariya-music-video",
     title: "Kesariya - AI Cinematic Music Video",
