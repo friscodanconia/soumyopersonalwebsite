@@ -8,6 +8,7 @@ export const projects: Project[] = [
     tagline: "AI writing pattern detector built specifically for LinkedIn posts",
     thumbnail: "https://images.unsplash.com/photo-1455390582262-044cdead277a?auto=format&fit=crop&q=80",
     links: {
+      demo: "https://theredpen.soumyosinha.com",
       github: "https://github.com/friscodanconia/TheRedPen",
     },
     technologies: ["Vanilla JavaScript", "HTML/CSS", "Chrome Extension (Manifest V3)", "Anthropic API", "Gemini API", "OpenRouter API"],
