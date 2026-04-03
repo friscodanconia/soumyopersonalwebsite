@@ -16,6 +16,7 @@ import { SayItInIndiaGuide } from './pages/SayItInIndiaGuide';
 import { SearchingForFoodGuide } from './pages/SearchingForFoodGuide';
 import { Reading } from './components/Reading';
 import { Contact } from './components/Contact';
+import { AIUpdates } from './pages/AIUpdates';
 
 // Full-bleed routes that render without sidebar/nav
 const FULL_BLEED_ROUTES = ['/projects/searching-for-food/guide'];
@@ -52,6 +53,7 @@ function AppContent() {
             <Route path="/product-imagery-gallery" element={<ProductImageryGallery />} />
             <Route path="/krutrim-demos" element={<KrutrimDemos />} />
             <Route path="/reading" element={<Reading />} />
+            <Route path="/ai-updates" element={<AIUpdates />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="*" element={<Navigate to="/about" replace />} />
           </Routes>

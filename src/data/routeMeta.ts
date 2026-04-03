@@ -28,6 +28,10 @@ export const routeMeta: Record<string, RouteMeta> = {
     title: 'Contact',
     description: 'Get in touch with Soumyo Sinha for collaborations, speaking, or consulting.',
   },
+  '/ai-updates': {
+    title: 'AI Builders Digest',
+    description: 'Daily digest tracking what top AI builders are thinking and shipping.',
+  },
   '/product-imagery-gallery': {
     title: 'Product Imagery Gallery',
     description: 'AI-generated product imagery showcase exploring creative applications of generative AI.',
