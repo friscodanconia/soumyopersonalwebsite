@@ -25,8 +25,7 @@ export function BottomNav() {
         {navItems.map((item) => {
           const Icon = item.icon;
           const active = isActive(item.path);
-          return (
-            {item.external ? (
+          return item.external ? (
               <a
                 key={item.path}
                 href={item.path}
@@ -50,8 +49,7 @@ export function BottomNav() {
                 <Icon className="w-5 h-5 mb-1" />
                 <span className="text-xs font-medium">{item.label}</span>
               </Link>
-            )}
-          );
+            );
         })}
       </div>
     </nav>
