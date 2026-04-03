@@ -161,10 +161,19 @@ export function AIUpdates() {
                         }`}
                       >
                         {formatDate(entry.date)}
+                        {selectedDate === entry.date && ' (viewing)'}
                       </button>
                     </li>
                   ))}
                 </ul>
+                <a
+                  href="https://aiupdates.soumyosinha.com/archive"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block mt-4 text-sm text-amber-600 dark:text-amber-400 hover:underline"
+                >
+                  View full archive &rarr;
+                </a>
               </div>
             )}
           </>
