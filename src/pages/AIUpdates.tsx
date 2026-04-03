@@ -143,7 +143,7 @@ export function AIUpdates() {
             )}
 
             {/* Archive */}
-            {index.length > 1 && (
+            {index.length > 0 && (
               <div className="mt-12 pt-8 border-t border-gray-200 dark:border-gray-800">
                 <h2 className="text-base font-medium text-gray-900 dark:text-gray-100 mb-4">Archive</h2>
                 <ul className="space-y-2">
