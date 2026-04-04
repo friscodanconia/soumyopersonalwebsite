@@ -16,6 +16,11 @@
       "has": [{ "type": "host", "value": "howindiaeats.soumyosinha.com" }],
       "destination": "/projects/searching-for-food/guide",
       "permanent": false
+    },
+    {
+      "source": "/ai-updates",
+      "destination": "https://aiupdates.soumyosinha.com",
+      "permanent": false
     }
   ],
   "trailingSlash": false,
