@@ -2,6 +2,55 @@ import type { Project, Section } from '../types/project';
 
 export const projects: Project[] = [
   {
+    id: "ai-builders-digest",
+    slug: "ai-builders-digest",
+    title: "AI Builders Digest",
+    tagline: "A daily plain-language summary of what matters in AI, written for humans",
+    thumbnail: "https://images.unsplash.com/photo-1504711434969-e33886168d6c?auto=format&fit=crop&q=80",
+    links: {
+      demo: "https://aiupdates.soumyosinha.com",
+      github: "https://github.com/friscodanconia/follow-builders",
+    },
+    technologies: ["Next.js", "Claude API", "GitHub Actions", "Buttondown", "Vercel"],
+    sections: [
+      {
+        type: 'text',
+        content: "A daily digest that tracks what top AI builders are shipping and explains it in plain language. Read it at <a href=\"https://aiupdates.soumyosinha.com\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"text-amber-600 dark:text-amber-400 hover:underline\">aiupdates.soumyosinha.com</a>."
+      },
+      {
+        type: 'stats',
+        items: [
+          { value: "5", label: "stories per day" },
+          { value: "6 AM", label: "IST daily delivery" },
+        ]
+      },
+      {
+        type: 'heading',
+        content: "The Why"
+      },
+      {
+        type: 'text',
+        content: "Most AI news is written for practitioners \u2014 full of jargon, benchmark numbers, and insider context that means nothing to a general audience. I wanted a daily email that explains AI developments the way a smart friend would over coffee: clear, specific, and connected to real life."
+      },
+      {
+        type: 'heading',
+        content: "Key Features"
+      },
+      {
+        type: 'list',
+        items: ["Automated daily pipeline: fetches from AI lab blogs, builder Twitter, podcasts, and Chinese AI sources", "Claude API generates the digest in plain English with specific \"why it matters\" per story", "3-5 stories per day, ordered by significance \u2014 not by source type", "Topic tagging with human-friendly labels (AI Assistants, Business AI, Chinese AI)", "Email delivery via Buttondown", "Deduplication ensures stories don't repeat across days"]
+      },
+      {
+        type: 'heading',
+        content: "Tools Used"
+      },
+      {
+        type: 'list',
+        items: ["Next.js static site on Vercel", "Claude Sonnet for digest generation", "GitHub Actions for daily automation (6 AM IST)", "Buttondown for newsletter delivery", "RSS, HTML scraping, and upstream feed mirroring for source ingestion"]
+      },
+    ]
+  },
+  {
     id: "the-red-pen",
     slug: "the-red-pen",
     title: "The Red Pen \u2014 LinkedIn Edition",
