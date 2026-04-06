@@ -21,6 +21,11 @@
       "source": "/ai-updates",
       "destination": "https://aiupdates.soumyosinha.com",
       "permanent": false
+    },
+    {
+      "source": "/ai-updates/:path*",
+      "destination": "https://aiupdates.soumyosinha.com/:path*",
+      "permanent": false
     }
   ],
   "trailingSlash": false,
