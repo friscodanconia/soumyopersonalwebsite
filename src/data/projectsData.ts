@@ -5,23 +5,24 @@ export const projects: Project[] = [
     id: "ai-builders-digest",
     slug: "ai-builders-digest",
     title: "AI Builders Digest",
-    tagline: "A daily plain-language summary of what matters in AI, written for humans",
+    tagline: "Follow builders, not influencers \u2014 a daily AI digest with editorial voice",
     thumbnail: "https://images.unsplash.com/photo-1504711434969-e33886168d6c?auto=format&fit=crop&q=80",
     links: {
       demo: "https://aiupdates.soumyosinha.com",
       github: "https://github.com/friscodanconia/follow-builders",
     },
-    technologies: ["Next.js", "Claude API", "GitHub Actions", "Buttondown", "Vercel"],
+    technologies: ["Next.js 15", "Claude API", "GitHub Actions", "Buttondown", "Vercel", "RSS/Atom feeds"],
     sections: [
       {
         type: 'text',
-        content: "A daily digest that tracks what top AI builders are shipping and explains it in plain language. Read it at <a href=\"https://aiupdates.soumyosinha.com\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"text-amber-600 dark:text-amber-400 hover:underline\">aiupdates.soumyosinha.com</a>."
+        content: "A daily digest that tracks what AI builders are actually shipping and explains why it matters to you. Not a corporate press release roundup. Read it at <a href=\"https://aiupdates.soumyosinha.com\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"text-amber-600 dark:text-amber-400 hover:underline\">aiupdates.soumyosinha.com</a>."
       },
       {
         type: 'stats',
         items: [
-          { value: "5", label: "stories per day" },
-          { value: "6 AM", label: "IST daily delivery" },
+          { value: "3-5", label: "stories per day" },
+          { value: "14", label: "curated sources" },
+          { value: "28", label: "builders tracked" },
         ]
       },
       {
@@ -30,7 +31,7 @@ export const projects: Project[] = [
       },
       {
         type: 'text',
-        content: "Most AI news is written for practitioners \u2014 full of jargon, benchmark numbers, and insider context that means nothing to a general audience. I wanted a daily email that explains AI developments the way a smart friend would over coffee: clear, specific, and connected to real life."
+        content: "AI news digests are a crowded market, but most of them have the same problem: they summarize corporate announcements and call it a day. Nobody tells you what Karpathy thinks about agents breaking in production, or why DeepSeek shipping a reasoning model in China should matter to your startup. I wanted a digest with an editorial point of view that prioritizes builder voices over press releases, and covers Chinese AI labs as engineering teams, not geopolitical threats."
       },
       {
         type: 'heading',
@@ -38,7 +39,7 @@ export const projects: Project[] = [
       },
       {
         type: 'list',
-        items: ["Automated daily pipeline: fetches from AI lab blogs, builder Twitter, podcasts, and Chinese AI sources", "Claude API generates the digest in plain English with specific \"why it matters\" per story", "3-5 stories per day, ordered by significance \u2014 not by source type", "Topic tagging with human-friendly labels (AI Assistants, Business AI, Chinese AI)", "Email delivery via Buttondown", "Deduplication ensures stories don't repeat across days"]
+        items: ["14 curated sources across RSS feeds, official blogs, research labs, and builder Twitter accounts", "28 individual builders tracked (Karpathy, Swyx, Levie, Masad, etc.) with accumulating post history", "Claude API generates the digest with an opinionated editorial voice, no AI slop (270+ banned phrases from differential analysis)", "Every story has a reader-focused \"Why it matters\" that tells you what changes in YOUR work", "Chinese AI coverage (DeepSeek, Qwen, MiniMax) guaranteed in every issue", "Branded HTML email template matching the website's visual identity", "Builder pages at /builders with accumulating post history over time", "RSS feed, topic taxonomy, archive with editorial previews", "Duplicate email guard prevents multiple sends per day"]
       },
       {
         type: 'heading',
@@ -46,7 +47,7 @@ export const projects: Project[] = [
       },
       {
         type: 'list',
-        items: ["Next.js static site on Vercel", "Claude Sonnet for digest generation", "GitHub Actions for daily automation (6 AM IST)", "Buttondown for newsletter delivery", "RSS, HTML scraping, and upstream feed mirroring for source ingestion"]
+        items: ["Next.js 15 static site on Vercel with ISR", "Claude Sonnet 4 for digest generation with few-shot prompting", "GitHub Actions cron (6 AM IST + 7 AM backup) for daily automation", "Buttondown for branded HTML newsletter delivery", "11 RSS/Atom feeds + 3 HTML scrapers for source ingestion", "TheRedPen AI writing research integrated into prompt (270 phrases, 13 structural detectors)", "Builder accumulation system (mirrors the topic taxonomy pattern)"]
       },
     ]
   },
